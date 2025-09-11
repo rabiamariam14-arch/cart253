@@ -49,7 +49,14 @@ function flyingCreatures(x, y) {
 
  }
 
-function landBased(){}
+function landBased() {
+    line(300,180,340,180)
+    line(330,225,320,200)
+    line(310,225,320,200)
+    line(320,200, 320, 150)
+    fill(0,0,0)
+    ellipse(320,150,28,28)
+}
     
 function house() {
     fill(0,0,0)
