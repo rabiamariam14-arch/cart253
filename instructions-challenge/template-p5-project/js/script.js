@@ -52,9 +52,12 @@ function flyingCreatures(x, y) {
 function landBased(){}
     
 function house() {
-    //triangle(50, 50, 50, y2, x3, y3)
+    fill(0,0,0)
+    triangle(390,125,510, 125, 450,40)
     fill(165,42,42)
     rect(400, 125, 100, 100)
+    fill(255, 0, 127)
+    rect(434,150,30,30)
 }
 
 
