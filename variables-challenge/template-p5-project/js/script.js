@@ -1,6 +1,6 @@
 /**
  * Mr. Furious
- * Pippin Barr
+ * Mariam Rabia
  *
  * A guy who becomes visibly furious!
  */
