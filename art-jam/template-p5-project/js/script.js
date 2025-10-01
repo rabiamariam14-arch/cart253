@@ -27,13 +27,19 @@ function setup() {
 */
 function draw() {
     background(245);
-
+//window
     if (mouseX > width / 2) {
         fill(255,230,180)
     } else {
         fill(200,220,250)
     }
-    rect(100,100, 100, 120)
+    rect(100, 120, 340, 300)
+    // door
+    
+    fill(200, 220, 250);
+    rect(500, 200, 220, 400)
+    ellipse(610, 200, 220, 200)
+    noStroke()
 
 
 }
