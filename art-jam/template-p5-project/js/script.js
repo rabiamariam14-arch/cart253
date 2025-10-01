@@ -14,6 +14,7 @@
 let flowerX = [];
 let flowerY = [];
 let totalFlowers = 20;
+let bgColor = 0;
 
 function setup() {
     createCanvas(800, 600);
@@ -28,16 +29,16 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(245);
+    background(bgColor, 200, 255, 255 - bgColor);
+    
+    bgColor = bgColor + 1;
+    if (bgColor > 255) {
+        bgColor = 0;
+    }
 
     //window
-
-    if (mouseX > 100) {
-        fill(0, 0, 128)
-    } else {
-        fill(200, 220, 250)
-    }
-    rect(100, 120, 340, 300)
+    fill(200, 220, 250);
+    rect(100, 120, 340, 300);
 
     // door
     
