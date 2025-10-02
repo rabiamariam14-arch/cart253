@@ -42,11 +42,16 @@ function draw() {
 
     // door
     
+   let distanceToCenter = abs(mouseX - width / 2);
+    if (distanceToCenter < 250) {
+        stroke(0); // noir si souris proche du centre
+    } else {
+        stroke(255); // blanc sinon
+    }
+    strokeWeight(7);
     fill(200, 220, 250);
     ellipse(610, 200, 220, 200);
     rect(500, 200, 220, 400);
-    stroke(255, 255, 255);
-    strokeWeight(7);
     
     //FLOWERS
 
@@ -61,5 +66,6 @@ function draw() {
             flowerX[i] = random(0, 800);
         }
     }
+
 }
     
